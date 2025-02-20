@@ -1,0 +1,143 @@
+body {
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+}
+
+.nav-bar {
+    background-color: #253b80;
+    opacity: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.logo {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 200;
+    color: #fff;
+    align-content: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+}
+
+a {
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    margin: auto;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #253b80;
+    line-height: 1.6;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.events {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.event-img {
+    width: 500px;
+    border-radius: 5px;
+}
+
+.gold-cup, .walk, .bay-fc, .earthquakes {
+    background-color: #169BD7;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.more-info {
+    background-color: #fff;
+    color: #169BD7;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Jost', sans-serif;
+    margin: 10px;
+}
+
+.more-info:hover {
+    background-color: #253b80;
+    color: #fff;
+}
+
+.bay-link {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.bay-link:hover {
+    color: #253b80;
+    opacity: 50%;
+    text-decoration: underline;
+    text-shadow: 0px 0px 2px rgba(37,59,128,0.55);
+    font-weight: 500;
+}
+
+footer {
+    color: black;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px;
+}
+
+@media screen and (max-width: 530px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-bar {
+        flex-direction: column;
+    }
+    .logo {
+        flex-flow: column wrap;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .event-img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .event-img {
+        width: 250px;
+    }
+}

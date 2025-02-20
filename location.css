@@ -1,0 +1,154 @@
+body {
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+}
+
+.nav-bar {
+    background-color: #253b80;
+    opacity: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.logo {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 200;
+    color: #fff;
+    align-content: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+}
+
+a {
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    margin: auto;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    color: black;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px;
+}
+
+.map {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+iframe {
+    padding: 15px;
+    margin: auto;
+}
+
+h2, h3 {
+    color: #253b80;
+    line-height: 1.6;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    color: #253b80;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.directions {
+    color: #253b80;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.directions:hover {
+    color: #169BD7;
+    text-decoration: underline;
+}
+
+.event-link {
+    color: #253b80;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.event-link:hover {
+    color: #169BD7;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 530px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-bar {
+        flex-direction: column;
+    }
+    .logo {
+        flex-flow: column wrap;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    iframe {
+        width: 550px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    iframe {
+        width: 85%;
+        height: 90%;
+        overflow: hidden;
+    }
+}
